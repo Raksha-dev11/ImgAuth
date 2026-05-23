@@ -602,6 +602,8 @@ button { font-family: var(--font); }
   color: #fff; margin: 0 auto 18px;
   box-shadow: 0 0 0 4px rgba(124,58,237,0.20);
 }
+.team-avatar--photo { background-size: cover; background-position: center top; background-color: transparent; font-size: 0; }
+.team-avatar--photo img { display: none; }
 .team-name { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
 .team-role {
   font-size: 0.78rem; font-weight: 600;

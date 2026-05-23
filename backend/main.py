@@ -15,7 +15,9 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], all
 
 BASE_DIR = Path(__file__).parent
 FRONTEND = BASE_DIR.parent / "frontend"
+PUBLIC = BASE_DIR.parent / "public"
 app.mount("/static", StaticFiles(directory=str(FRONTEND / "static")), name="static")
+app.mount("/public", StaticFiles(directory=str(PUBLIC)), name="public")
 
 
 @app.on_event("startup")
