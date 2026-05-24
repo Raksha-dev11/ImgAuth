@@ -141,3 +141,6 @@ ImgAuthAI.zip
 node_modules/
 dist/
 out/
+
+# Generated heatmap uploads (runtime artifacts, not source files)
+frontend/static/uploads/
