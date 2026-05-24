@@ -32,7 +32,7 @@ COPY --chown=user:user . /code
 
 # Pre-download Hugging Face models during build to speed up container startup.
 # This avoids container startup timeouts and lazy-loading delays.
-RUN python -c " \
+RUN python -c "\
 from transformers import pipeline; \
 pipeline('image-classification', model='umm-maybe/AI-image-detector'); \
 pipeline('image-classification', model='dima806/ai_vs_real_image_detection'); \
